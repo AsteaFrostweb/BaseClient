@@ -1,0 +1,14 @@
+C:\Users\morga\source\repos\BaseClient\BaseClient\bin\Debug\net8.0\BaseClient.exe
+C:\Users\morga\source\repos\BaseClient\BaseClient\bin\Debug\net8.0\BaseClient.deps.json
+C:\Users\morga\source\repos\BaseClient\BaseClient\bin\Debug\net8.0\BaseClient.runtimeconfig.json
+C:\Users\morga\source\repos\BaseClient\BaseClient\bin\Debug\net8.0\BaseClient.dll
+C:\Users\morga\source\repos\BaseClient\BaseClient\bin\Debug\net8.0\BaseClient.pdb
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.AssemblyInfoInputs.cache
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.AssemblyInfo.cs
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.csproj.CoreCompileInputs.cache
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.dll
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\refint\BaseClient.dll
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.pdb
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.genruntimeconfig.cache
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\ref\BaseClient.dll
