@@ -1,80 +1,94 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using BSCShared.Packets;
+using System;
+using System.Net.Security;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using BSCShared;
 
 namespace BaseClient
 {
     internal class Client
     {
-        TcpClient tcpClient;
+        private TcpClient tcpClient;
+        private SslStream sslStream;
+        private CancellationTokenSource Cts;
 
         public Client() 
         {
-            Main();
+            Debugging.whitelist.Add("Client");
         }
 
-        public void Main()
+        public async Task RunAsync()
         {
-            if (Connect("127.0.0.1", 58585))
+            Cts = new CancellationTokenSource();    
+
+            if (await ConnectAsync("127.0.0.1", 58585))
             {
-                bool isRunning = true;
-                while (isRunning) 
+                _ = Task.Run(() => PingPongPacket.Pulse(sslStream, 1, Cts));
+                Console.WriteLine("Connected! Type 'quit' to exit.");
+
+                while (!Cts.IsCancellationRequested)
                 {
                     string message = Console.ReadLine();
-                    if (message == "quit")
-                        isRunning = false;
+                    if (string.IsNullOrEmpty(message)) continue;
+
+                    if (message.Equals("quit", StringComparison.OrdinalIgnoreCase))
+                        Cts.Cancel();
                     else
-                        SendMessage(message);
+                        await SendMessageAsync(message);
                 }
+
+                await Disconnect();
             }
-            else 
+            else
             {
-                Console.WriteLine("Unable to connect to server applicaiton");
+                Console.WriteLine("Unable to connect to server application.");
             }
-
-
         }
 
-        public bool Connect(string ip, int port) 
+        private async Task<bool> ConnectAsync(string ip, int port)
         {
-            Console.WriteLine("Connecting to server");
-            tcpClient = new TcpClient();
-                      
-
             try
             {
-                tcpClient.Connect(ip, port);
+                tcpClient = new TcpClient();
+                await tcpClient.ConnectAsync(ip, port);
+
+                sslStream = new SslStream(tcpClient.GetStream(), false,
+                    (sender, certificate, chain, errors) => true); // trust cert for dev
+
+                await sslStream.AuthenticateAsClientAsync("BaseServer"); // Must match CN
+                Console.WriteLine("TLS handshake complete!");
                 return true;
             }
-            catch 
+            catch (Exception ex)
             {
-                return false;                
+                Console.WriteLine($"Connection error: {ex.Message}");
+                return false;
             }
         }
 
-        public void Disconnect() 
+        private async Task Disconnect()
         {
-
-            if (tcpClient != null && tcpClient.Connected) 
+            try
             {
-                Console.WriteLine("Disconnecting from server");
-                tcpClient.Close();
+                await sslStream.DisposeAsync();
+                tcpClient.Dispose();          
+                Console.WriteLine("Disconnected from server.");
             }
+            catch { }
         }
 
-        private void SendMessage(string msg) 
+        private async Task SendMessageAsync(string message)
         {
-            if (tcpClient != null && tcpClient.Connected) 
+            if (tcpClient?.Connected ?? false)
             {
-                NetworkStream ns = tcpClient.GetStream();
-                byte[] packet = new byte[1024];
-                byte[] msgBytes = Encoding.UTF8.GetBytes(msg);
+                // Create and send packet
+                MessagePacket msgPacket = new MessagePacket(message);
+                Console.WriteLine("Message packet created: " + message);
 
-                msgBytes.CopyTo(packet, 0);
-                ns.Write(packet);
+                await msgPacket.WriteToStreamAsync(sslStream);
+                Console.WriteLine("Message packet written to stream");
             }
         }
     }

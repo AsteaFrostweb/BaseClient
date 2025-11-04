@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="BSCShared">
+      <HintPath>..\..\BSCShared\BSCShared\bin\Debug\net8.0\BSCShared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

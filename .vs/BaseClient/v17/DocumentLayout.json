@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\morga\\source\\repos\\BaseClient\\",
+  "WorkspaceRootPath": "C:\\Users\\morga\\Desktop\\Development\\BaseServerClient\\BaseClient\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{42D673C1-6938-4604-8C38-E43FA27EB608}|BaseClient\\BaseClient.csproj|c:\\users\\morga\\source\\repos\\baseclient\\baseclient\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{42D673C1-6938-4604-8C38-E43FA27EB608}|BaseClient\\BaseClient.csproj|c:\\users\\morga\\desktop\\development\\baseserverclient\\baseclient\\baseclient\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42D673C1-6938-4604-8C38-E43FA27EB608}|BaseClient\\BaseClient.csproj|solutionrelative:baseclient\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42D673C1-6938-4604-8C38-E43FA27EB608}|BaseClient\\BaseClient.csproj|c:\\users\\morga\\source\\repos\\baseclient\\baseclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{42D673C1-6938-4604-8C38-E43FA27EB608}|BaseClient\\BaseClient.csproj|c:\\users\\morga\\desktop\\development\\baseserverclient\\baseclient\\baseclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42D673C1-6938-4604-8C38-E43FA27EB608}|BaseClient\\BaseClient.csproj|solutionrelative:baseclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,27 +24,27 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\morga\\source\\repos\\BaseClient\\BaseClient\\Client.cs",
+              "DocumentMoniker": "C:\\Users\\morga\\Desktop\\Development\\BaseServerClient\\BaseClient\\BaseClient\\Client.cs",
               "RelativeDocumentMoniker": "BaseClient\\Client.cs",
-              "ToolTip": "C:\\Users\\morga\\source\\repos\\BaseClient\\BaseClient\\Client.cs",
+              "ToolTip": "C:\\Users\\morga\\Desktop\\Development\\BaseServerClient\\BaseClient\\BaseClient\\Client.cs",
               "RelativeToolTip": "BaseClient\\Client.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T20:32:35.209Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\morga\\source\\repos\\BaseClient\\BaseClient\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\morga\\Desktop\\Development\\BaseServerClient\\BaseClient\\BaseClient\\Program.cs",
               "RelativeDocumentMoniker": "BaseClient\\Program.cs",
-              "ToolTip": "C:\\Users\\morga\\source\\repos\\BaseClient\\BaseClient\\Program.cs",
+              "ToolTip": "C:\\Users\\morga\\Desktop\\Development\\BaseServerClient\\BaseClient\\BaseClient\\Program.cs",
               "RelativeToolTip": "BaseClient\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T20:32:17.843Z"
+              "WhenOpened": "2025-10-30T20:32:17.843Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "BaseClient/1.0.0": {
+        "dependencies": {
+          "BSCShared": "1.0.0.0"
+        },
         "runtime": {
           "BaseClient.dll": {}
+        }
+      },
+      "BSCShared/1.0.0.0": {
+        "runtime": {
+          "BSCShared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -16,6 +27,11 @@
   "libraries": {
     "BaseClient/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BSCShared/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
