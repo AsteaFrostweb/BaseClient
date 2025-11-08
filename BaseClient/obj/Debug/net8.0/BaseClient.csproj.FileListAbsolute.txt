@@ -31,3 +31,8 @@ C:\Users\morga\Desktop\Development\BaseServerClient\BaseClient\BaseClient\bin\De
 C:\Users\morga\Desktop\Development\BaseServerClient\BaseClient\BaseClient\bin\Debug\net8.0\BSCShared.pdb
 C:\Users\morga\Desktop\Development\BaseServerClient\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.csproj.AssemblyReference.cache
 C:\Users\morga\Desktop\Development\BaseServerClient\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.csproj.Up2Date
+C:\Users\morga\source\repos\BaseClient\BaseClient\bin\Debug\net8.0\BSCShared.dll
+C:\Users\morga\source\repos\BaseClient\BaseClient\bin\Debug\net8.0\BSCShared.pdb
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.csproj.AssemblyReference.cache
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.sourcelink.json
+C:\Users\morga\source\repos\BaseClient\BaseClient\obj\Debug\net8.0\BaseClient.csproj.Up2Date
