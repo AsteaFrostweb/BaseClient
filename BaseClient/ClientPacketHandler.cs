@@ -17,10 +17,9 @@ namespace BaseClient
 
         internal static async Task HandleIncomingPackets(Client client) 
         {
-            while (!client.Cts.IsCancellationRequested)
+            while (!client.connectionCTS.IsCancellationRequested)
             {
-
-                if (!(client.tcpClient != null && client.tcpClient.Connected))
+                if (!client.isConnected)
                     break;
                 Packet p = await Packet.ReadFromStreamAsync(client.sslStream);
                 if (p != null)
